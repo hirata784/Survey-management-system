@@ -1,3 +1,8 @@
+html,
+body{
+    height: 100%;
+}
+
 .inner {
     width: 1024px;
     margin: 0 auto;
@@ -20,14 +25,42 @@ form {
 form th {
     text-align: left;
     vertical-align: top;
+    font-weight: normal;
+}
+
+.name_text,
+.address_email {
+    line-height: 3;
+    padding: 10px 20px;
+    width: 450px;
+}
+
+.gender_radio {
+    transform: scale(2.0);
+}
+
+.age_select {
+    padding: 15px;
+    width: 495px;
+}
+
+.permission_checkbox {
+    transform: scale(2.0);
 }
 
 span {
     color: red;
+    margin: 0 10px;
+}
+
+.opinion_textarea {
+    line-height: 3;
+    padding: 10px 20px;
+    width: 450px;
 }
 
 button {
-    display: inline-block;
+    display: block;
     padding: 15px 40px;
     background-color: #42C1F5;
     margin: 0 auto;

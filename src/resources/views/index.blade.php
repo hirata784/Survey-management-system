@@ -13,20 +13,20 @@
         <div class="inner">
             <h1>システムへのご意見をお聞かせください</h1>
             <form action="">
-                <table>
+                <table cellspacing="15">
                     <tr>
-                        <th><label for="">氏名<span>※</span></label></th>
+                        <th><label>氏名<span>※</span></label></th>
                         <td>
-                            <input type="text" placeholder="入力してください">
+                            <input type="text" class="name_text" name="=name" placeholder="入力してください">
                         </td>
                     </tr>
 
                     <tr>
                         <th><label for="">性別<span>※</span></label></th>
                         <td>
-                            <input type="radio" name="gender" value="man" id="man" checked>
+                            <input type="radio" class="gender_radio-man" name="gender" value="man" id="man" checked>
                             <label for="man">男性</label>
-                            <input type="radio" name="gender" value="woman" id="woman">
+                            <input type="radio" class="gender_radio-woman" name="gender" value="woman" id="woman">
                             <label for="woman">女性</label>
                         </td>
                     </tr>
@@ -34,7 +34,7 @@
                     <tr>
                         <th><label for="">年代<span>※</span></label></th>
                         <td>
-                            <select name="" id="">
+                            <select class="age_select" name="age" id="">
                                 <option value="" selected>選択して下さい</option>
                                 <option value="">10代以下</option>
                                 <option value="">20代</option>
@@ -48,7 +48,7 @@
 
                     <tr>
                         <th><label for="">メールアドレス<span>※</span></label></th>
-                        <td><input type="text" placeholder="入力してください"></td>
+                        <td><input class="address_email" type="email" placeholder="入力してください"></td>
                     </tr>
 
                     <tr>
@@ -57,7 +57,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="checkbox" id="submit" checked>
+                            <input class="permission_checkbox" type="checkbox" id="submit" checked>
                             <label for="submit">送信を許可します</label>
                         </td>
                     </tr>
@@ -65,7 +65,7 @@
                     <tr>
                         <th><label for="">ご意見</label></th>
                         <td>
-                            <textarea name="" id="" placeholder="入力してください"></textarea>
+                            <textarea class="opinion_textarea" rows="3" cols="60" placeholder="入力してください"></textarea>
                         </td>
                     </tr>
                 </table>
